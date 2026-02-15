@@ -45,3 +45,7 @@ Example:
 ## Tips
 
 - http://dasunhegoda.com/class-diagram-from-php-code-using-phuml/867/
+
+## Maintenance
+
+See [how to contribute](https://github.com/dockette/.github/blob/master/CONTRIBUTING.md) to this package.
