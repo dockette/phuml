@@ -8,7 +8,7 @@ build:
 	docker buildx build --platform ${DOCKER_PLATFORMS} -t ${DOCKER_IMAGE}:${DOCKER_TAG} .
 
 test:
-	docker run --rm ${DOCKER_IMAGE}:${DOCKER_TAG} -h
+	docker run --rm ${DOCKER_IMAGE}:${DOCKER_TAG} -h 2>&1 | grep -q "Usage: phuml"
 	docker run --rm ${DOCKER_IMAGE}:${DOCKER_TAG} -l
 
 run:
