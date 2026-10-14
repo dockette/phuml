@@ -1,6 +1,6 @@
 FROM dockette/alpine:3.6
 
-MAINTAINER Milan Sulc <sulcmil@gmail.com>
+LABEL maintainer="Milan Sulc <sulcmil@gmail.com>"
 
 RUN apk update && \
     apk upgrade && \
