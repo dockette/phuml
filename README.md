@@ -41,6 +41,11 @@ Example:
     processor and saved to the file out.png
 ```
 
+## Versions
+
+The release version is the date in [`VERSION`](VERSION). CI pushes `latest` also as `dockette/phuml:<VERSION>`.
+To release, run `make release`, commit and push to `master`.
+
 ## Tips
 
 - http://dasunhegoda.com/class-diagram-from-php-code-using-phuml/867/
