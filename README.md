@@ -8,14 +8,17 @@
 </p>
 
 <p align=center>
-   phUML is fully automatic UML diagram generator. It takes arbitrary object oriented code written in php5 and creates fully blown class diagrams of it.
+   Fully automatic UML diagram generator for PHP.
 </p>
 
 -----
 
+[phUML](https://github.com/jakobwesthoff/phuml) is a fully automatic UML diagram generator. It takes arbitrary object
+oriented code written in php5 and creates fully blown class diagrams of it.
+
 ## Usage
 
-```
+```sh
 docker run dockette/phuml
 ```
 
@@ -43,8 +46,22 @@ Example:
 
 ## Versions
 
-The release version is the date in [`VERSION`](VERSION). CI pushes `latest` also as `dockette/phuml:<VERSION>`.
-To release, run `make release`, commit and push to `master`.
+| Version | Release |
+|---------|---------|
+| `dockette/phuml:YYYY.MM.DD` | release `YYYY.MM.DD` |
+| `dockette/phuml:latest` | latest build of `master` |
+
+Releases are listed on [GitHub](https://github.com/dockette/phuml/releases).
+
+## Development
+
+```sh
+make build          # build the image
+make test           # check the help text and processors
+make run            # run phUML on the current directory
+make version        # print VERSION
+make release        # set today's date in VERSION
+```
 
 ## Tips
 
@@ -52,4 +69,5 @@ To release, run `make release`, commit and push to `master`.
 
 ## Maintenance
 
-See [how to contribute](https://github.com/dockette/.github/blob/master/CONTRIBUTING.md) to this package. Consider to [support](https://github.com/sponsors/f3l1x) **f3l1x**. Thank you for using this package.
+See [how to contribute](https://github.com/dockette/.github/blob/master/CONTRIBUTING.md) to this package. Consider to
+[support](https://github.com/sponsors/f3l1x) **f3l1x**. Thank you for using this package.
